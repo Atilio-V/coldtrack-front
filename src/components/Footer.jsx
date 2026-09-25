@@ -15,9 +15,7 @@ export default function Footer() {
           {/* Columna 1: Branding ColdTrack */}
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <div className="flex items-center justify-center w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-cyan-500 text-white shadow-xs">
-                <Snowflake className="w-3.5 h-3.5" />
-              </div>
+              <img src="/coldtrack.svg" alt="ColdTrack Logo" className="h-14 w-auto object-contain" />
               <span className="text-base font-bold text-white tracking-tight">
                 ColdTrack
               </span>
