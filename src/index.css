@@ -6,13 +6,19 @@
 @theme {
   --color-background: var(--bg-main);
   --color-foreground: var(--text-main);
-  
+
   --color-surface: var(--bg-surface);
   --color-surface-hover: var(--bg-surface-hover);
-  
+
   --color-navbar: var(--bg-navbar);
   --color-footer: var(--bg-footer);
   --color-input: var(--bg-input);
+
+  --color-brand-950: #0D0E20;
+  --color-brand-800: #2D1C7F;
+  --color-brand-600: #7546E8;
+  --color-brand-300: #B0A9E5;
+  --color-brand-200: #C8B3F6;
 }
 
 :root {
@@ -30,13 +36,13 @@
 }
 
 .dark {
-  --bg-main: #070a14;
-  --text-main: #f8fafc;
-  --bg-surface: #0b1120;
-  --bg-surface-hover: #1e293b;
-  --bg-navbar: rgba(8, 13, 26, 0.85);
-  --bg-footer: #050811;
-  --bg-input: #070a14;
+  --bg-main: #0D0E20;
+  --text-main: #C8B3F6;
+  --bg-surface: #2D1C7F;
+  --bg-surface-hover: #7546E8;
+  --bg-navbar: rgba(13, 14, 32, 0.85);
+  --bg-footer: #0D0E20;
+  --bg-input: #0D0E20;
 }
 
 .font-chakra {
@@ -59,10 +65,10 @@ body {
 }
 
 .glass-panel-dark {
-  background: rgba(11, 17, 32, 0.85);
+  background: rgba(13, 14, 32, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(45, 28, 127, 0.7);
 }
 
 /* Custom Scrollbars */
@@ -86,10 +92,13 @@ body {
 
 /* Animation utilities */
 @keyframes cold-pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
     transform: scale(1);
   }
+
   50% {
     opacity: 0.6;
     transform: scale(1.08);
