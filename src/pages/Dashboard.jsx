@@ -112,7 +112,7 @@ export default function Dashboard() {
       </div>
 
       {/* Filter and Search Bar */}
-      <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center bg-white dark:bg-[#0b1120]/90 p-3 sm:p-4 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 shadow-xs backdrop-blur-md">
+      <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center bg-surface/90 p-3 sm:p-4 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 shadow-xs backdrop-blur-md">
         <div className="relative flex-1">
           <Search className="absolute left-3 top-3 h-4 w-4 text-slate-400 dark:text-slate-500" />
           <Input
@@ -128,7 +128,7 @@ export default function Dashboard() {
             <SelectTrigger className="w-full sm:w-[180px] bg-slate-50 dark:bg-slate-900/60 border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 rounded-xl">
               <SelectValue placeholder="Estado" />
             </SelectTrigger>
-            <SelectContent className="bg-white dark:bg-[#0b1120] border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 z-50">
+            <SelectContent className="bg-surface border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 z-50">
               <SelectItem value="todos">Todos los Estados</SelectItem>
               <SelectItem value="Operativo">Solo Operativos</SelectItem>
               <SelectItem value="Posible Falla">Posible Falla</SelectItem>

@@ -164,7 +164,7 @@ export default function Landing() {
 
           <div className="grid gap-4 sm:grid-cols-3">
             {/* Phase 1: IoT */}
-            <div className="group relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0b1120]/90 p-5 shadow-xs hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
+            <div className="group relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-surface/90 p-5 shadow-xs hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
               <div className="mb-4 inline-flex rounded-xl bg-blue-500/10 dark:bg-blue-500/20 p-2.5 text-blue-600 dark:text-cyan-400">
                 <Thermometer className="h-5 w-5" />
               </div>
@@ -180,7 +180,7 @@ export default function Landing() {
             </div>
 
             {/* Phase 2: AI */}
-            <div className="group relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0b1120]/90 p-5 shadow-xs hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
+            <div className="group relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-surface/90 p-5 shadow-xs hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
               <div className="mb-4 inline-flex rounded-xl bg-purple-500/10 dark:bg-purple-500/20 p-2.5 text-purple-600 dark:text-purple-400">
                 <BrainCircuit className="h-5 w-5" />
               </div>
@@ -196,7 +196,7 @@ export default function Landing() {
             </div>
 
             {/* Phase 3: RPA */}
-            <div className="group relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0b1120]/90 p-5 shadow-xs hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
+            <div className="group relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-surface/90 p-5 shadow-xs hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
               <div className="mb-4 inline-flex rounded-xl bg-emerald-500/10 dark:bg-emerald-500/20 p-2.5 text-emerald-600 dark:text-emerald-400">
                 <Bot className="h-5 w-5" />
               </div>
@@ -226,7 +226,7 @@ export default function Landing() {
       {/* Floating Dialog */}
       {showAssistant && (
         <div className="fixed bottom-20 right-6 z-50 animate-in slide-in-from-bottom-2 duration-200">
-          <div className="w-72 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0b1120] p-3.5 shadow-2xl space-y-2.5">
+          <div className="w-72 rounded-2xl border border-slate-200 dark:border-slate-800 bg-surface p-3.5 shadow-2xl space-y-2.5">
             <div className="flex items-center justify-between">
               <span className="text-xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5 text-cyan-400" /> Asistente ColdTrack
@@ -259,7 +259,7 @@ export default function Landing() {
 
 function MetricCard({ icon, label, value, subtext, gradient }) {
   return (
-    <Card className="border-slate-200/80 dark:border-slate-800/80 bg-white dark:bg-[#0b1120]/90 hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 p-4 rounded-2xl relative overflow-hidden backdrop-blur-md">
+    <Card className="border-slate-200/80 dark:border-slate-800/80 bg-surface/90 hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 p-4 rounded-2xl relative overflow-hidden backdrop-blur-md">
       <div className={`absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl ${gradient} to-transparent rounded-full blur-lg -z-10`} />
       <div className="flex items-center justify-between mb-2">
         <span className="text-[11px] font-semibold text-slate-500 dark:text-slate-400">

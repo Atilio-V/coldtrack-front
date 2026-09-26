@@ -61,7 +61,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b backdrop-blur-xl transition-colors duration-250 bg-white/80 border-slate-200/80 dark:bg-[#080d1a]/85 dark:border-slate-800/80 shadow-xs">
+    <nav className="sticky top-0 z-50 w-full border-b backdrop-blur-xl transition-colors duration-250 bg-navbar border-slate-200/80 dark:border-slate-800/80 shadow-xs">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12">
         <div className="flex items-center justify-between h-16">
           {/* Brand Logo */}

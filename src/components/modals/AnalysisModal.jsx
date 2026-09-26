@@ -84,7 +84,7 @@ export function AnalysisModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={handleClose}>
-      <DialogContent className="bg-white dark:bg-[#0b1120] border-slate-200 dark:border-slate-800 max-h-[85vh] flex flex-col overflow-hidden sm:max-w-lg text-slate-900 dark:text-slate-100">
+      <DialogContent className="bg-surface border-slate-200 dark:border-slate-800 max-h-[85vh] flex flex-col overflow-hidden sm:max-w-lg text-slate-900 dark:text-slate-100">
         {!orderCreated ? (
           <>
             <DialogHeader>

@@ -31,7 +31,7 @@ export function TelemetryModal({ isOpen, onClose, data }) {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="bg-white dark:bg-[#0b1120] border-slate-200 dark:border-slate-800 max-w-2xl max-h-[85vh] overflow-y-auto text-slate-900 dark:text-slate-100">
+      <DialogContent className="bg-surface border-slate-200 dark:border-slate-800 max-w-2xl max-h-[85vh] overflow-y-auto text-slate-900 dark:text-slate-100">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2 text-slate-900 dark:text-white">
             <Activity className="h-5 w-5 text-blue-500 dark:text-cyan-400" />

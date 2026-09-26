@@ -44,7 +44,7 @@ function StatCard({
 }) {
   return (
     <div
-      className={`relative overflow-hidden bg-white dark:bg-[#0b1120]/90 px-3.5 py-2.5 rounded-xl border ${borderColor} shadow-2xs transition-all duration-200 hover:shadow-xs backdrop-blur-md`}
+      className={`relative overflow-hidden bg-surface/90 px-3.5 py-2.5 rounded-xl border ${borderColor} shadow-2xs transition-all duration-200 hover:shadow-xs backdrop-blur-md`}
     >
       <div className={`absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl ${gradient} rounded-full blur-lg -z-10`} />
       <div className="flex items-center justify-between gap-3 mb-0.5">

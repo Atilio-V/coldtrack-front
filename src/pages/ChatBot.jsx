@@ -151,7 +151,7 @@ export default function ChatBot() {
           }
         }}
       >
-        <DialogContent className="bg-white dark:bg-[#0b1120] border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 sm:max-w-md">
+        <DialogContent className="bg-surface border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 sm:max-w-md">
           <DialogHeader className="space-y-3">
             <div className="mx-auto w-12 h-12 rounded-2xl bg-amber-500/10 dark:bg-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center border border-amber-500/20 shadow-xs">
               <Construction className="w-6 h-6 animate-pulse" />
@@ -181,7 +181,7 @@ export default function ChatBot() {
 
       {/* Si no hay contexto, mostrar pantalla bloqueada informativa */}
       {!hasValidContext ? (
-        <div className="flex-1 flex flex-col items-center justify-center text-center p-6 space-y-4 rounded-2xl border border-dashed border-slate-300 dark:border-slate-800 bg-white/50 dark:bg-[#0b1120]/50 backdrop-blur-md">
+        <div className="flex-1 flex flex-col items-center justify-center text-center p-6 space-y-4 rounded-2xl border border-dashed border-slate-300 dark:border-slate-800 bg-surface/50 backdrop-blur-md">
           <div className="w-16 h-16 rounded-3xl bg-blue-500/10 dark:bg-blue-500/20 text-blue-600 dark:text-cyan-400 flex items-center justify-center">
             <Bot className="w-8 h-8" />
           </div>
@@ -233,7 +233,7 @@ export default function ChatBot() {
           </div>
 
           {/* Chat Container */}
-          <Card className="flex-1 flex flex-col overflow-hidden shadow-lg border-slate-200/80 dark:border-slate-800/80 bg-white dark:bg-[#0b1120]/95 backdrop-blur-md rounded-2xl min-h-[460px] md:min-h-[520px]">
+          <Card className="flex-1 flex flex-col overflow-hidden shadow-lg border-slate-200/80 dark:border-slate-800/80 bg-surface/95 backdrop-blur-md rounded-2xl min-h-[460px] md:min-h-[520px]">
             <ScrollArea className="flex-1 p-3 sm:p-6">
               <div className="space-y-4 sm:space-y-5 pb-4">
                 {messages.map((msg) => (
@@ -308,7 +308,7 @@ export default function ChatBot() {
                   onChange={(e) => setInput(e.target.value)}
                   onKeyDown={handleKeyDown}
                   disabled={isLoading}
-                  className="bg-white dark:bg-[#070a14] border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 focus-visible:ring-blue-500 rounded-xl text-xs sm:text-sm h-10 sm:h-11"
+                  className="bg-input border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 focus-visible:ring-blue-500 rounded-xl text-xs sm:text-sm h-10 sm:h-11"
                 />
                 <Button
                   onClick={handleSend}

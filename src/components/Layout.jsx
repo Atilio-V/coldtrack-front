@@ -12,7 +12,7 @@ export default function Layout() {
   }, [pathname]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 dark:bg-[#070a14] dark:text-slate-100 transition-colors duration-250 selection:bg-blue-500 selection:text-white relative">
+    <div className="min-h-screen flex flex-col bg-background text-foreground transition-colors duration-250 selection:bg-blue-500 selection:text-white relative">
       {/* Background ambient lighting in dark mode */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden -z-10 dark:block hidden opacity-35">
         <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-blue-600/15 blur-3xl" />

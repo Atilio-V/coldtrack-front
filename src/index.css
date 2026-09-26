@@ -3,10 +3,40 @@
 
 @variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --color-background: var(--bg-main);
+  --color-foreground: var(--text-main);
+  
+  --color-surface: var(--bg-surface);
+  --color-surface-hover: var(--bg-surface-hover);
+  
+  --color-navbar: var(--bg-navbar);
+  --color-footer: var(--bg-footer);
+  --color-input: var(--bg-input);
+}
+
 :root {
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   --font-chakra: 'Chakra Petch', sans-serif;
+
+  --bg-main: #f8fafc;
+  --text-main: #0f172a;
+  --bg-surface: #ffffff;
+  --bg-surface-hover: #f1f5f9;
+  --bg-navbar: rgba(255, 255, 255, 0.8);
+  --bg-footer: #ffffff;
+  --bg-input: #ffffff;
+}
+
+.dark {
+  --bg-main: #070a14;
+  --text-main: #f8fafc;
+  --bg-surface: #0b1120;
+  --bg-surface-hover: #1e293b;
+  --bg-navbar: rgba(8, 13, 26, 0.85);
+  --bg-footer: #050811;
+  --bg-input: #070a14;
 }
 
 .font-chakra {
@@ -15,14 +45,9 @@
 
 body {
   font-family: var(--font-sans);
-  background-color: #f8fafc;
-  color: #0f172a;
+  background-color: var(--bg-main);
+  color: var(--text-main);
   transition: background-color 0.25s ease, color 0.25s ease;
-}
-
-.dark body {
-  background-color: #070a14;
-  color: #f8fafc;
 }
 
 /* Custom Glass & Glowing Utilities */

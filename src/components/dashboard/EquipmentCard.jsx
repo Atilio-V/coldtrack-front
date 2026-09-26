@@ -22,7 +22,7 @@ export function EquipmentCard({ data, onViewTelemetry, onAnalyze, hasOrder }) {
   const isCriticalTemp = data.telemetry.thermal.internal_temp_c > 8;
 
   return (
-    <Card className="group relative overflow-hidden transition-all duration-300 border-slate-200/80 dark:border-slate-800/80 bg-white dark:bg-[#0b1120]/95 hover:shadow-lg hover:shadow-blue-950/10 dark:hover:shadow-cyan-950/20 hover:-translate-y-0.5 backdrop-blur-md rounded-2xl">
+    <Card className="group relative overflow-hidden transition-all duration-300 border-slate-200/80 dark:border-slate-800/80 bg-surface/95 hover:shadow-lg hover:shadow-blue-950/10 dark:hover:shadow-cyan-950/20 hover:-translate-y-0.5 backdrop-blur-md rounded-2xl">
       {/* Ambient top border highlight */}
       <div
         className={`h-0.5 w-full transition-colors duration-300 ${

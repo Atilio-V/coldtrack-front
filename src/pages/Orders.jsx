@@ -119,7 +119,7 @@ export default function Orders() {
       </div>
 
       {/* Filter and Search */}
-      <div className="flex flex-col sm:flex-row gap-3 items-center bg-white dark:bg-[#0b1120]/90 p-3 sm:p-4 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 shadow-xs backdrop-blur-md">
+      <div className="flex flex-col sm:flex-row gap-3 items-center bg-surface/90 p-3 sm:p-4 rounded-2xl border border-slate-200/80 dark:border-slate-800/80 shadow-xs backdrop-blur-md">
         <div className="relative flex-1 w-full">
           <Search className="absolute left-3 top-3 h-4 w-4 text-slate-400 dark:text-slate-500" />
           <Input
@@ -136,7 +136,7 @@ export default function Orders() {
         {filteredOrders.map((order) => (
           <Card
             key={order.id}
-            className="group relative overflow-hidden transition-all duration-300 border-slate-200/80 dark:border-slate-800/80 bg-white dark:bg-[#0b1120]/95 hover:shadow-xl hover:-translate-y-1 backdrop-blur-md rounded-2xl"
+            className="group relative overflow-hidden transition-all duration-300 border-slate-200/80 dark:border-slate-800/80 bg-surface/95 hover:shadow-xl hover:-translate-y-1 backdrop-blur-md rounded-2xl"
           >
             <div className="h-1 w-full bg-gradient-to-r from-blue-600 via-cyan-500 to-indigo-600" />
 
