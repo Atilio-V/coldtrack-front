@@ -36,7 +36,8 @@
   --text-main: var(--color-light-5);
   --bg-surface: var(--color-light-2);
   --bg-surface-hover: var(--color-light-3);
-  --bg-navbar: rgba(128, 164, 212, 0.8); /* var(--color-light-4) with opacity */
+  --bg-navbar: rgba(128, 164, 212, 0.8);
+  /* var(--color-light-4) with opacity */
   --bg-footer: var(--color-light-2);
   --bg-input: var(--color-light-1);
 }
@@ -46,8 +47,8 @@
   --text-main: #C8B3F6;
   --bg-surface: #2D1C7F;
   --bg-surface-hover: #7546E8;
-  --bg-navbar: rgba(13, 14, 32, 0.85);
-  --bg-footer: #0D0E20;
+  --bg-navbar: rgba(45, 28, 127, 0.85);
+  --bg-footer: #2D1C7F;
   --bg-input: #0D0E20;
 }
 

@@ -48,14 +48,12 @@ export default function Landing() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100/90 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 shadow-xs backdrop-blur-md">
             <span className="relative flex h-2 w-2">
               <span
-                className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${
-                  isOnline ? "bg-emerald-400" : "bg-cyan-400"
-                }`}
+                className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${isOnline ? "bg-emerald-400" : "bg-cyan-400"
+                  }`}
               />
               <span
-                className={`relative inline-flex rounded-full h-2 w-2 ${
-                  isOnline ? "bg-emerald-500" : "bg-cyan-500"
-                }`}
+                className={`relative inline-flex rounded-full h-2 w-2 ${isOnline ? "bg-emerald-500" : "bg-cyan-500"
+                  }`}
               />
             </span>
             <span className="text-[11px] font-semibold text-slate-700 dark:text-slate-300">
@@ -100,7 +98,9 @@ export default function Landing() {
       </section>
 
       {/* ========== BENTO GRID - METRICS ========== */}
-      <section className="px-4 py-12 sm:py-16 border-t border-slate-200/80 dark:border-slate-800/80 bg-slate-100/50 dark:bg-slate-950/40">
+      <section className="relative px-4 py-12 sm:py-16 bg-slate-100/50 dark:bg-slate-950/40">
+        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-slate-400/40 dark:via-black/60 to-transparent" />
+        <div className="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-slate-400/40 dark:via-black/60 to-transparent" />
         <div className="mx-auto max-w-5xl space-y-8">
           <div className="text-center space-y-1.5">
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
@@ -164,11 +164,11 @@ export default function Landing() {
 
           <div className="grid gap-4 sm:grid-cols-3">
             {/* Phase 1: IoT */}
-            <div className="group relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-surface/90 p-5 shadow-xs hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
+            <div className="group relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-surface/90 p-5 shadow-xs hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 dark:hover:border-cyan-500/40 dark:hover:shadow-[0_0_20px_rgba(34,211,238,0.2)]">
               <div className="mb-4 inline-flex rounded-xl bg-blue-500/10 dark:bg-blue-500/20 p-2.5 text-blue-600 dark:text-cyan-400">
                 <Thermometer className="h-5 w-5" />
               </div>
-              <span className="text-[9px] font-bold uppercase tracking-wider text-blue-600 dark:text-cyan-400 block mb-0.5">
+              <span className="text-[9px] font-bold uppercase tracking-wider text-blue-600 dark:text-cyan-400 block mb-0.5 transition-all duration-300 dark:group-hover:drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]">
                 Fase 1 • Telemetría IoT
               </span>
               <h3 className="text-base font-bold text-slate-900 dark:text-white mb-1.5">
@@ -180,11 +180,11 @@ export default function Landing() {
             </div>
 
             {/* Phase 2: AI */}
-            <div className="group relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-surface/90 p-5 shadow-xs hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
+            <div className="group relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-surface/90 p-5 shadow-xs hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 dark:hover:border-cyan-500/40 dark:hover:shadow-[0_0_20px_rgba(34,211,238,0.2)]">
               <div className="mb-4 inline-flex rounded-xl bg-purple-500/10 dark:bg-purple-500/20 p-2.5 text-purple-600 dark:text-purple-400">
                 <BrainCircuit className="h-5 w-5" />
               </div>
-              <span className="text-[9px] font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400 block mb-0.5">
+              <span className="text-[9px] font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400 block mb-0.5 transition-all duration-300 dark:group-hover:drop-shadow-[0_0_8px_rgba(192,132,252,0.8)]">
                 Fase 2 • Machine Learning & n8n
               </span>
               <h3 className="text-base font-bold text-slate-900 dark:text-white mb-1.5">
@@ -196,11 +196,11 @@ export default function Landing() {
             </div>
 
             {/* Phase 3: RPA */}
-            <div className="group relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-surface/90 p-5 shadow-xs hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
+            <div className="group relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-surface/90 p-5 shadow-xs hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 dark:hover:border-cyan-500/40 dark:hover:shadow-[0_0_20px_rgba(34,211,238,0.2)]">
               <div className="mb-4 inline-flex rounded-xl bg-emerald-500/10 dark:bg-emerald-500/20 p-2.5 text-emerald-600 dark:text-emerald-400">
                 <Bot className="h-5 w-5" />
               </div>
-              <span className="text-[9px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 block mb-0.5">
+              <span className="text-[9px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 block mb-0.5 transition-all duration-300 dark:group-hover:drop-shadow-[0_0_8px_rgba(52,211,153,0.8)]">
                 Fase 3 • Orquestación B2B
               </span>
               <h3 className="text-base font-bold text-slate-900 dark:text-white mb-1.5">
@@ -259,7 +259,7 @@ export default function Landing() {
 
 function MetricCard({ icon, label, value, subtext, gradient }) {
   return (
-    <Card className="border-slate-200/80 dark:border-slate-800/80 bg-surface/90 hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 p-4 rounded-2xl relative overflow-hidden backdrop-blur-md">
+    <Card className="border-slate-200/80 dark:border-slate-800/80 bg-surface/90 hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 p-4 rounded-2xl relative overflow-hidden backdrop-blur-md dark:hover:border-cyan-500/40 dark:hover:shadow-[0_0_20px_rgba(34,211,238,0.2)]">
       <div className={`absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl ${gradient} to-transparent rounded-full blur-lg -z-10`} />
       <div className="flex items-center justify-between mb-2">
         <span className="text-[11px] font-semibold text-slate-500 dark:text-slate-400">

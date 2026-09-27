@@ -61,13 +61,13 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b backdrop-blur-xl transition-colors duration-250 bg-navbar border-slate-200/80 dark:border-slate-800/80 shadow-xs">
+    <nav className="sticky top-0 z-50 w-full backdrop-blur-xl transition-colors duration-250 bg-gradient-to-b from-navbar via-navbar/70 to-transparent">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-24">
           {/* Brand Logo */}
           <div className="flex items-center gap-6">
             <Link
-              to={isAuthenticated ? "/dashboard" : "/"}
+              to={"/"}
               className="flex items-center gap-2.5 group transition-transform duration-200 hover:scale-[1.01]"
             >
               <img src="/coldtrack.svg" alt="ColdTrack Logo" className="h-20 w-auto object-contain" />

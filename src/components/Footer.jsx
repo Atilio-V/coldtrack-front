@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="border-t bg-footer text-slate-400 dark:border-slate-800/80 mt-auto transition-colors duration-200">
+    <footer className="dark:border-slate-800/40 bg-gradient-to-t from-footer via-footer/70 to-transparent text-slate-400 mt-auto transition-colors duration-200">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 py-7">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-6">
           {/* Columna 1: Branding ColdTrack */}
